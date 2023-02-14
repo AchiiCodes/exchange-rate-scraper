@@ -10,7 +10,7 @@ ITEM_PIPELINES = {
     "crawl.pipelines.CrawlPipeline": 300,
 }
 DATABASE = {
-    "drivername": "postgres",
+    "drivername": "postgresql",
     "host": os.environ["POSTGRES_HOST"],
     "port": os.environ["POSTGRES_PORT"],
     "username": os.environ["POSTGRES_USER"],

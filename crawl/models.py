@@ -15,7 +15,7 @@ def db_connect() -> Engine:
     Creates database connection using database settings from settings.py.
     Returns sqlalchemy engine instance
     """
-    return create_engine(URL(**settings.DATABASE))
+    return create_engine(URL.create(**settings.DATABASE))
 
 
 def create_items_table(engine: Engine):

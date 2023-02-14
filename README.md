@@ -14,5 +14,5 @@ docker-compose up -d
 
 # Running scraper
 ```
-scrapy runspider  
+scrapy runspider .\crawl\spiders\pottchange.py     
 ```
