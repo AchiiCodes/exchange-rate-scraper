@@ -18,8 +18,7 @@ class CrawlPipeline:
         Process the item and store to database.
         """
         session = self.Session()
-        instance = session.query(
-            PottchangeItem).filter_by(**item).one_or_none()
+        instance = session.query(PottchangeItem).filter_by(**item).one_or_none()
         if instance:
             return instance
         rate_item = PottchangeItem(**item)

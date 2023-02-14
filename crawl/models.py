@@ -33,8 +33,9 @@ class PottchangeItem(DeclarativeBase):
     __tablename__ = "pottchange"
 
     land_code = Column("land_code", String, primary_key=True)
-    created_date = Column("created_date", DateTime,
-                          default=datetime.utcnow, primary_key=True)
+    created_date = Column(
+        "created_date", DateTime, default=datetime.utcnow, primary_key=True
+    )
     sell_per_100 = Column("sell_per_100", Double)
     buy_per_100 = Column("buy_per_100", Double)
     sell_per_euro = Column("sell_per_euro", Double)

@@ -2,7 +2,7 @@ import scrapy
 
 
 class PottchangeItem(scrapy.Item):
-    """ Definition of the PottchangeItem """
+    """Definition of the PottchangeItem"""
 
     land_code = scrapy.Field()
     sell_per_100 = scrapy.Field()
