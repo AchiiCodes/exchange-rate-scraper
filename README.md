@@ -16,3 +16,8 @@ docker-compose up -d
 ```
 scrapy runspider .\crawl\spiders\pottchange.py     
 ```
+
+```
+scrapyd
+scrapyd-deploy local 
+```
